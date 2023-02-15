@@ -5,7 +5,7 @@ from dbhelpers import run_statement
 app = Flask(__name__)
 
 
-@app.get('api/animals')
+@app.get('/api/animeaux')
 def get_animals():
     result = run_statement("CALL get_all_animals")
     keys = ["animalName", "numberOfLegs"]
